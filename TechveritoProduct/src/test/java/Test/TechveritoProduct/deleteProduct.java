@@ -24,8 +24,8 @@ public class deleteProduct extends base {
 	public void initialize() throws IOException {
 		driver = initializeBrowser();
 		driver.get(seturl);
-		loginUtility lgn = new loginUtility(driver);
-		lgn.loginToApp();
+		loginUtility lgin = new loginUtility(driver);
+		lgin.loginToApp();
 		productAction = new addEditProduct(driver);
 		productAction2 = new DeleteProduct(driver);
 		productAction.productTab();
