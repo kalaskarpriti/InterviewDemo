@@ -8,5 +8,10 @@ public class Demo3 {
 		System.out.println("Demo3");
 
 	}
+	
+	public void method2() {
+		System.out.println("M2-Demo3");
+
+	}
 
 }
