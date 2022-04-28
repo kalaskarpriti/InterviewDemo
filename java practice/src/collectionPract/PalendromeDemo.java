@@ -40,6 +40,8 @@ public class PalendromeDemo {
 			}
 		}
 		System.out.println(list2);
+		
+		
 	}
 
 }
