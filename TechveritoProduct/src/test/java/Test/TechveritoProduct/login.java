@@ -4,7 +4,9 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import Resources.base;
@@ -12,7 +14,7 @@ import Resources.base;
 public class login extends base {
 	public WebDriver driver;
 	
-	@BeforeMethod
+	@BeforeTest
 	public void setup() throws IOException {
 		driver = initializeBrowser();
 		driver.get(seturl);
@@ -24,7 +26,7 @@ public class login extends base {
 		lgn.loginToApp();
 	}
 	
-	@AfterMethod
+	@AfterTest
 	public void endTest() {
 		driver.close();
 	}

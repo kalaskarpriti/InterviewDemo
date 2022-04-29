@@ -6,29 +6,31 @@ import java.util.ArrayList;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import POMDesign.addEditProduct;
+import POMDesign.CRUDOperationProduct;
 import POMDesign.listingProduct;
 import Resources.base;
 
 public class listingProducts extends base {
 	public WebDriver driver;
 	listingProduct productActionfilter;
-	addEditProduct productAction;
+	CRUDOperationProduct productAction;
 	public excelutility file;
 	ArrayList<String> data;
 
-	@BeforeMethod
+	@BeforeTest
 	public void setup() throws IOException {
 		driver = initializeBrowser();
 		driver.get(seturl);
 		loginUtility lgn = new loginUtility(driver);
 		lgn.loginToApp();
 		productActionfilter = new listingProduct(driver);
-		productAction = new addEditProduct(driver);
+		productAction = new CRUDOperationProduct(driver);
 		productAction.productTab();
 		file = new excelutility();
 		data = file.getData("FilterData", "Product");

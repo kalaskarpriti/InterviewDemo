@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-	<test thread-count="5" name="Test">
+<suite name="Suite" thread-count="4" parallel="tests">
+	<test thread-count="1" name="Test">
 		<classes>
 			<class name="Test.TechveritoProduct.login" />
-			<class name="Test.TechveritoProduct.createProduct" />
-			<class name="Test.TechveritoProduct.editProduct" />
-			<class name="Test.TechveritoProduct.deleteProduct" />
+			<class name="Test.TechveritoProduct.CRUDOpProduct" />
 			<class name="Test.TechveritoProduct.fieldValidation" />
 			<class name="Test.TechveritoProduct.listingProducts" />
 		</classes>

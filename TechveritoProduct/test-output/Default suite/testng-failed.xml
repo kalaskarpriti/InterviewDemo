@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test.TechveritoProduct.fieldValidation">
+      <class name="Test.TechveritoProduct.listingProducts">
         <methods>
-          <include name="uniqueTitle"/>
-          <include name="initialize"/>
+          <include name="filterProductByTitle"/>
+          <include name="setup"/>
           <include name="endTest"/>
-          <include name="uniqueSku"/>
         </methods>
-      </class> <!-- Test.TechveritoProduct.fieldValidation -->
+      </class> <!-- Test.TechveritoProduct.listingProducts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

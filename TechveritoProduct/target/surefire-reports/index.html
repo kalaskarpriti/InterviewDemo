@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\PRITI\eclipse-workspace\TechveritoProduct\testng.xml</span>
+                    <span>C:\Users\PRITI\git\InterviewDemoQA\TechveritoProduct\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,17 +104,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test.TechveritoProduct.createProduct" class="method navigator-link" hash-for-method="addProduct">addProduct</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test.TechveritoProduct.CRUDOpProduct" class="method navigator-link" hash-for-method="addProduct">addProduct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test.TechveritoProduct.editProduct" class="method navigator-link" hash-for-method="addProduct">addProduct</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test.TechveritoProduct.CRUDOpProduct" class="method navigator-link" hash-for-method="delProduct">delProduct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test.TechveritoProduct.deleteProduct" class="method navigator-link" hash-for-method="delProduct">delProduct</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test.TechveritoProduct.CRUDOpProduct" class="method navigator-link" hash-for-method="editProduct">editProduct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -207,7 +207,7 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Test.TechveritoProduct.editProduct</span>
+              <span class="class-name">Test.TechveritoProduct.CRUDOpProduct</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -217,14 +217,6 @@
                   <span class="method-name">addProduct</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Test.TechveritoProduct.deleteProduct</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="delProduct">
@@ -232,19 +224,11 @@
                   <span class="method-name">delProduct</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Test.TechveritoProduct.createProduct</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addProduct">
-                  </a> <!-- addProduct -->
-                  <span class="method-name">addProduct</span>
+                  <a name="editProduct">
+                  </a> <!-- editProduct -->
+                  <span class="method-name">editProduct</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -309,19 +293,17 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\PRITI\eclipse-workspace\TechveritoProduct\testng.xml</span>
+            <span class="header-content">C:\Users\PRITI\git\InterviewDemoQA\TechveritoProduct\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
+&lt;suite thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Test.TechveritoProduct.login&quot;/&gt;
-      &lt;class name=&quot;Test.TechveritoProduct.createProduct&quot;/&gt;
-      &lt;class name=&quot;Test.TechveritoProduct.editProduct&quot;/&gt;
-      &lt;class name=&quot;Test.TechveritoProduct.deleteProduct&quot;/&gt;
+      &lt;class name=&quot;Test.TechveritoProduct.CRUDOpProduct&quot;/&gt;
       &lt;class name=&quot;Test.TechveritoProduct.fieldValidation&quot;/&gt;
       &lt;class name=&quot;Test.TechveritoProduct.listingProducts&quot;/&gt;
     &lt;/classes&gt;
@@ -337,7 +319,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (6 classes)</span>
+                <span class="test-name">Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -365,58 +347,58 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginToApp')
-data.setCell(0, 2, 'Test.TechveritoProduct.login')
-data.setCell(0, 3, 37571);
+data.setCell(0, 1, 'filterProductByTitle')
+data.setCell(0, 2, 'Test.TechveritoProduct.listingProducts')
+data.setCell(0, 3, 3845);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'uniqueSku')
+data.setCell(1, 1, 'emptyTitle')
 data.setCell(1, 2, 'Test.TechveritoProduct.fieldValidation')
-data.setCell(1, 3, 4382);
+data.setCell(1, 3, 2519);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'filterProductByTitle')
-data.setCell(2, 2, 'Test.TechveritoProduct.listingProducts')
-data.setCell(2, 3, 4265);
+data.setCell(2, 1, 'addProduct')
+data.setCell(2, 2, 'Test.TechveritoProduct.CRUDOpProduct')
+data.setCell(2, 3, 2141);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'addProduct')
-data.setCell(3, 2, 'Test.TechveritoProduct.createProduct')
-data.setCell(3, 3, 2318);
+data.setCell(3, 1, 'emptySku')
+data.setCell(3, 2, 'Test.TechveritoProduct.fieldValidation')
+data.setCell(3, 3, 1814);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'titleLenghtValidation')
 data.setCell(4, 2, 'Test.TechveritoProduct.fieldValidation')
-data.setCell(4, 3, 2205);
+data.setCell(4, 3, 1714);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'skuLenghtValidation')
 data.setCell(5, 2, 'Test.TechveritoProduct.fieldValidation')
-data.setCell(5, 3, 2143);
+data.setCell(5, 3, 1670);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'addProduct')
-data.setCell(6, 2, 'Test.TechveritoProduct.editProduct')
-data.setCell(6, 3, 2012);
+data.setCell(6, 1, 'uniqueTitle')
+data.setCell(6, 2, 'Test.TechveritoProduct.fieldValidation')
+data.setCell(6, 3, 1667);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'emptyDescription')
-data.setCell(7, 2, 'Test.TechveritoProduct.fieldValidation')
-data.setCell(7, 3, 1842);
+data.setCell(7, 1, 'editProduct')
+data.setCell(7, 2, 'Test.TechveritoProduct.CRUDOpProduct')
+data.setCell(7, 3, 1662);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'uniqueTitle')
+data.setCell(8, 1, 'emptyDescription')
 data.setCell(8, 2, 'Test.TechveritoProduct.fieldValidation')
-data.setCell(8, 3, 1481);
+data.setCell(8, 3, 1644);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'emptyTitle')
+data.setCell(9, 1, 'uniqueSku')
 data.setCell(9, 2, 'Test.TechveritoProduct.fieldValidation')
-data.setCell(9, 3, 1378);
+data.setCell(9, 3, 1644);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'emptySku')
-data.setCell(10, 2, 'Test.TechveritoProduct.fieldValidation')
-data.setCell(10, 3, 1340);
+data.setCell(10, 1, 'loginToApp')
+data.setCell(10, 2, 'Test.TechveritoProduct.login')
+data.setCell(10, 3, 1543);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'delProduct')
-data.setCell(11, 2, 'Test.TechveritoProduct.deleteProduct')
-data.setCell(11, 3, 1195);
+data.setCell(11, 2, 'Test.TechveritoProduct.CRUDOpProduct')
+data.setCell(11, 3, 1103);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 50 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -442,165 +424,131 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Test.TechveritoProduct.login</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
+              <div class="chronological-class-name">Test.TechveritoProduct.CRUDOpProduct</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">loginToApp</span>
-                <span class="method-start">31772 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">endTest</span>
-                <span class="method-start">69927 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.TechveritoProduct.createProduct</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">83763 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">addProduct</span>
-                <span class="method-start">100053 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">endTest</span>
-                <span class="method-start">102372 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.TechveritoProduct.editProduct</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">102965 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">addProduct</span>
-                <span class="method-start">111169 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">endTest</span>
-                <span class="method-start">113181 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.TechveritoProduct.deleteProduct</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">113261 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">delProduct</span>
-                <span class="method-start">120880 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">endTest</span>
-                <span class="method-start">122075 ms</span>
-              </div> <!-- configuration-method after -->
+              </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TechveritoProduct.fieldValidation</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
+              <div class="configuration-test before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">122161 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">emptyTitle</span>
-                <span class="method-start">130119 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">endTest</span>
-                <span class="method-start">131497 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">131560 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">emptySku</span>
-                <span class="method-start">138841 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">endTest</span>
-                <span class="method-start">140181 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">140244 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">emptyDescription</span>
-                <span class="method-start">146163 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">endTest</span>
-                <span class="method-start">148006 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">148064 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">uniqueTitle</span>
-                <span class="method-start">153963 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">endTest</span>
-                <span class="method-start">155445 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">155507 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">uniqueSku</span>
-                <span class="method-start">164520 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">endTest</span>
-                <span class="method-start">168903 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">169224 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">titleLenghtValidation</span>
-                <span class="method-start">174863 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">endTest</span>
-                <span class="method-start">177069 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">177146 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">skuLenghtValidation</span>
-                <span class="method-start">182819 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">endTest</span>
-                <span class="method-start">184962 ms</span>
-              </div> <!-- configuration-method after -->
+                <span class="method-start">8932 ms</span>
+              </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TechveritoProduct.listingProducts</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
+              <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">185046 ms</span>
-              </div> <!-- configuration-method before -->
+                <span class="method-start">14858 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.TechveritoProduct.login</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">21725 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.TechveritoProduct.listingProducts</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">filterProductByTitle</span>
-                <span class="method-start">190689 ms</span>
+                <span class="method-start">26672 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.TechveritoProduct.login</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginToApp</span>
+                <span class="method-start">30524 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.TechveritoProduct.CRUDOpProduct</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addProduct</span>
+                <span class="method-start">32068 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.TechveritoProduct.fieldValidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">emptyTitle</span>
+                <span class="method-start">34211 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.TechveritoProduct.CRUDOpProduct</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">editProduct</span>
+                <span class="method-start">36732 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.TechveritoProduct.fieldValidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">emptySku</span>
+                <span class="method-start">38396 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.TechveritoProduct.CRUDOpProduct</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">delProduct</span>
+                <span class="method-start">40211 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.TechveritoProduct.fieldValidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">emptyDescription</span>
+                <span class="method-start">41314 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">uniqueTitle</span>
+                <span class="method-start">42959 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">uniqueSku</span>
+                <span class="method-start">44627 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">titleLenghtValidation</span>
+                <span class="method-start">46272 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">skuLenghtValidation</span>
+                <span class="method-start">47987 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.TechveritoProduct.CRUDOpProduct</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endTest</span>
-                <span class="method-start">194955 ms</span>
+                <span class="method-start">49658 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.TechveritoProduct.fieldValidation</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">49745 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.TechveritoProduct.listingProducts</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">49899 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.TechveritoProduct.login</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">50018 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
