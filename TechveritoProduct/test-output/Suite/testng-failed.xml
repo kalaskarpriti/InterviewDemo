@@ -3,40 +3,6 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Test.TechveritoProduct.listingProducts">
-        <methods>
-          <include name="filterProductByTitle"/>
-          <include name="setup"/>
-          <include name="endTest"/>
-        </methods>
-      </class> <!-- Test.TechveritoProduct.listingProducts -->
-      <class name="Test.TechveritoProduct.login">
-        <methods>
-          <include name="setup"/>
-          <include name="loginToApp"/>
-          <include name="endTest"/>
-        </methods>
-      </class> <!-- Test.TechveritoProduct.login -->
-      <class name="Test.TechveritoProduct.fieldValidation">
-        <methods>
-          <include name="emptyDescription"/>
-          <include name="uniqueTitle"/>
-          <include name="initialize"/>
-          <include name="skuLenghtValidation"/>
-          <include name="endTest"/>
-          <include name="emptySku"/>
-          <include name="emptyTitle"/>
-          <include name="uniqueSku"/>
-          <include name="titleLenghtValidation"/>
-        </methods>
-      </class> <!-- Test.TechveritoProduct.fieldValidation -->
-      <class name="Test.TechveritoProduct.deleteProduct">
-        <methods>
-          <include name="delProduct"/>
-          <include name="initialize"/>
-          <include name="endTest"/>
-        </methods>
-      </class> <!-- Test.TechveritoProduct.deleteProduct -->
       <class name="Test.TechveritoProduct.createProduct">
         <methods>
           <include name="endTest"/>

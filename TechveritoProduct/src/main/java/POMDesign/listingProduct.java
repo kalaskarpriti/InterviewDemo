@@ -31,11 +31,8 @@ public class listingProduct {
 	@FindBy(id = "q_created_at_lteq_datetime")
 	private WebElement opentocalendar;
 
-	@FindBy(xpath = "//a[normalize-space()='11']")
-	private WebElement selectfromdate;
-
-	@FindBy(xpath = "//a[normalize-space()='13']")
-	private WebElement selectTodate;
+	@FindBy(css=".ui-state-default.ui-state-highlight")
+	private WebElement selectdate;
 
 	@FindBy(xpath = "//input[@name='commit']")
 	private WebElement filterButton;
@@ -61,7 +58,7 @@ public class listingProduct {
 	}
 
 	public void SelectcreatedFromDate() {
-		selectfromdate.click();
+		selectdate.click();
 	}
 
 	public void openToCalendar() {
@@ -69,7 +66,7 @@ public class listingProduct {
 	}
 
 	public void SelectcreateTodDate() {
-		selectTodate.click();
+		selectdate.click();
 	}
 
 	public void clickFilter() {

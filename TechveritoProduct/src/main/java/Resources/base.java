@@ -12,8 +12,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class base {
-	public WebDriver driver;
+	public static WebDriver driver;
 	public Properties prop;
 	public String seturl;
 	
@@ -28,8 +30,7 @@ public class base {
 		
 
 		if (browsername.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver",
-					System.getProperty("user.dir") + "\\src\\main\\java\\Resources\\chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		}
 

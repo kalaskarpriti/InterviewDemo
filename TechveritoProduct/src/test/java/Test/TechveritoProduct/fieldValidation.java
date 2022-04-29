@@ -7,25 +7,29 @@ import java.util.ArrayList;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import POMDesign.addEditProduct;
+import POMDesign.CRUDOperationProduct;
 import Resources.base;
 
 public class fieldValidation extends base {
 	public WebDriver driver;
-	addEditProduct productAction;
+	CRUDOperationProduct productAction;
 	public excelutility file;
 	ArrayList<String> data;
 
-	@BeforeMethod
+	@BeforeTest
 	public void initialize() throws IOException {
 		driver = initializeBrowser();
 		driver.get(seturl);
 		loginUtility lgn = new loginUtility(driver);
 		lgn.loginToApp();
-		productAction = new addEditProduct(driver);
+		productAction = new CRUDOperationProduct(driver);
 		productAction.productTab();
 		file = new excelutility();
 
@@ -43,6 +47,7 @@ public class fieldValidation extends base {
 		productAction.createProduct().click();
 		String validationMessage = productAction.ErrorText();
 		assertEquals(validationMessage, data.get(3));
+        productAction.cancelButton().click();
 
 	}
 
@@ -58,6 +63,7 @@ public class fieldValidation extends base {
 		productAction.createProduct().click();
 		String validationMessage = productAction.ErrorText();
 		assertEquals(validationMessage, data.get(3));
+		productAction.cancelButton().click();
 
 	}
 	// Enter empty description and valid data in all other fields and check error
@@ -73,6 +79,7 @@ public class fieldValidation extends base {
 		productAction.createProduct().click();
 		String validationMessage = productAction.ErrorText();
 		assertEquals(validationMessage, data.get(3));
+		productAction.cancelButton().click();
 
 	}
 
@@ -87,6 +94,7 @@ public class fieldValidation extends base {
 		productAction.createProduct().click();
 		String validationMessage = productAction.ErrorText();
 		assertEquals(validationMessage, data.get(4));
+		productAction.cancelButton().click();
 
 	}
 
@@ -101,6 +109,7 @@ public class fieldValidation extends base {
 		productAction.createProduct().click();
 		String validationMessage = productAction.ErrorText();
 		assertEquals(validationMessage, data.get(4));
+		productAction.cancelButton().click();
 
 	}
 
@@ -113,6 +122,7 @@ public class fieldValidation extends base {
 		productAction.enterSku().sendKeys(data.get(2));
 		productAction.enterDescription().sendKeys(data.get(3));
 		productAction.createProduct().click();
+		productAction.cancelButton().click();
 
 	}
 
@@ -125,9 +135,10 @@ public class fieldValidation extends base {
 		productAction.enterSku().sendKeys(data.get(2));
 		productAction.enterDescription().sendKeys(data.get(3));
 		productAction.createProduct().click();
+		productAction.cancelButton().click();
 	}
 
-	@AfterMethod
+	@AfterTest
 	public void endTest() {
 		driver.close();
 	}
