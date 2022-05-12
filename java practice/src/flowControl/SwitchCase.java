@@ -6,7 +6,7 @@ public class SwitchCase {
 		
 		switch (100) {
 
-		case 100:
+		case 10:
 			System.out.println("case 1");
 
 		case 1:

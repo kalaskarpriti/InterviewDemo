@@ -8,7 +8,7 @@ import java.util.Set;
 public class HCL {
 
 	public static void main(String[] args) {
-		int[] arr = { 2, 2, 4, 4, 7, -1, 5 };
+		int[] arr = { 2, 2, 4, 4, 7, -1, 5 ,1};
 		// output should be pair of 2 members whoes sum is 6 and should not be duplicate
 		Set myset = new LinkedHashSet();
 
