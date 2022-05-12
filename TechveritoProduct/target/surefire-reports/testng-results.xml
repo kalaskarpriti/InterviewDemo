@@ -1,99 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-29T08:25:28 IST" name="Suite" finished-at="2022-04-29T08:26:18 IST" duration-ms="50165">
+  <suite started-at="2022-05-03T10:20:30 IST" name="Surefire suite" finished-at="2022-05-03T10:20:47 IST" duration-ms="17666">
     <groups>
     </groups>
-    <test started-at="2022-04-29T08:25:28 IST" name="Test" finished-at="2022-04-29T08:26:18 IST" duration-ms="50165">
+    <test started-at="2022-05-03T10:20:30 IST" name="Surefire test" finished-at="2022-05-03T10:20:47 IST" duration-ms="17666">
       <class name="Test.TechveritoProduct.listingProducts">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test.TechveritoProduct.listingProducts@66d3eec0]" started-at="2022-04-29T08:25:43 IST" name="setup" finished-at="2022-04-29T08:25:50 IST" duration-ms="6867" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test.TechveritoProduct.listingProducts@175b9425]" started-at="2022-05-03T10:20:30 IST" name="setup" finished-at="2022-05-03T10:20:40 IST" duration-ms="10492" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="filterProductByTitle()[pri:0, instance:Test.TechveritoProduct.listingProducts@66d3eec0]" started-at="2022-04-29T08:25:55 IST" name="filterProductByTitle" finished-at="2022-04-29T08:25:59 IST" duration-ms="3845" status="PASS">
+        <test-method signature="filterProductByTitle()[pri:0, instance:Test.TechveritoProduct.listingProducts@175b9425]" started-at="2022-05-03T10:20:40 IST" name="filterProductByTitle" finished-at="2022-05-03T10:20:44 IST" duration-ms="3630" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filterProductByTitle -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:Test.TechveritoProduct.listingProducts@66d3eec0]" started-at="2022-04-29T08:26:18 IST" name="endTest" finished-at="2022-04-29T08:26:18 IST" duration-ms="119" status="PASS">
+        <test-method is-config="true" signature="endTest()[pri:0, instance:Test.TechveritoProduct.listingProducts@175b9425]" started-at="2022-05-03T10:20:44 IST" name="endTest" finished-at="2022-05-03T10:20:47 IST" duration-ms="3456" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
       </class> <!-- Test.TechveritoProduct.listingProducts -->
-      <class name="Test.TechveritoProduct.CRUDOpProduct">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Test.TechveritoProduct.CRUDOpProduct@7e7be63f]" started-at="2022-04-29T08:25:28 IST" name="initialize" finished-at="2022-04-29T08:25:37 IST" duration-ms="8932" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="addProduct()[pri:1, instance:Test.TechveritoProduct.CRUDOpProduct@7e7be63f]" started-at="2022-04-29T08:26:00 IST" name="addProduct" finished-at="2022-04-29T08:26:02 IST" duration-ms="2141" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addProduct -->
-        <test-method signature="editProduct()[pri:2, instance:Test.TechveritoProduct.CRUDOpProduct@7e7be63f]" started-at="2022-04-29T08:26:05 IST" name="editProduct" finished-at="2022-04-29T08:26:07 IST" duration-ms="1662" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editProduct -->
-        <test-method signature="delProduct()[pri:3, instance:Test.TechveritoProduct.CRUDOpProduct@7e7be63f]" started-at="2022-04-29T08:26:09 IST" name="delProduct" finished-at="2022-04-29T08:26:10 IST" duration-ms="1103" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- delProduct -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:Test.TechveritoProduct.CRUDOpProduct@7e7be63f]" started-at="2022-04-29T08:26:18 IST" name="endTest" finished-at="2022-04-29T08:26:18 IST" duration-ms="87" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTest -->
-      </class> <!-- Test.TechveritoProduct.CRUDOpProduct -->
-      <class name="Test.TechveritoProduct.login">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test.TechveritoProduct.login@3b6ddd1d]" started-at="2022-04-29T08:25:50 IST" name="setup" finished-at="2022-04-29T08:25:55 IST" duration-ms="4891" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginToApp()[pri:0, instance:Test.TechveritoProduct.login@3b6ddd1d]" started-at="2022-04-29T08:25:59 IST" name="loginToApp" finished-at="2022-04-29T08:26:00 IST" duration-ms="1543" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:Test.TechveritoProduct.login@3b6ddd1d]" started-at="2022-04-29T08:26:18 IST" name="endTest" finished-at="2022-04-29T08:26:18 IST" duration-ms="138" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTest -->
-      </class> <!-- Test.TechveritoProduct.login -->
-      <class name="Test.TechveritoProduct.fieldValidation">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Test.TechveritoProduct.fieldValidation@4738a206]" started-at="2022-04-29T08:25:37 IST" name="initialize" finished-at="2022-04-29T08:25:43 IST" duration-ms="5926" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="emptyTitle()[pri:1, instance:Test.TechveritoProduct.fieldValidation@4738a206]" started-at="2022-04-29T08:26:03 IST" name="emptyTitle" finished-at="2022-04-29T08:26:05 IST" duration-ms="2519" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- emptyTitle -->
-        <test-method signature="emptySku()[pri:2, instance:Test.TechveritoProduct.fieldValidation@4738a206]" started-at="2022-04-29T08:26:07 IST" name="emptySku" finished-at="2022-04-29T08:26:08 IST" duration-ms="1814" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- emptySku -->
-        <test-method signature="emptyDescription()[pri:3, instance:Test.TechveritoProduct.fieldValidation@4738a206]" started-at="2022-04-29T08:26:10 IST" name="emptyDescription" finished-at="2022-04-29T08:26:11 IST" duration-ms="1644" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- emptyDescription -->
-        <test-method signature="uniqueTitle()[pri:4, instance:Test.TechveritoProduct.fieldValidation@4738a206]" started-at="2022-04-29T08:26:11 IST" name="uniqueTitle" finished-at="2022-04-29T08:26:13 IST" duration-ms="1667" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uniqueTitle -->
-        <test-method signature="uniqueSku()[pri:5, instance:Test.TechveritoProduct.fieldValidation@4738a206]" started-at="2022-04-29T08:26:13 IST" name="uniqueSku" finished-at="2022-04-29T08:26:15 IST" duration-ms="1644" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uniqueSku -->
-        <test-method signature="titleLenghtValidation()[pri:6, instance:Test.TechveritoProduct.fieldValidation@4738a206]" started-at="2022-04-29T08:26:15 IST" name="titleLenghtValidation" finished-at="2022-04-29T08:26:16 IST" duration-ms="1714" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- titleLenghtValidation -->
-        <test-method signature="skuLenghtValidation()[pri:7, instance:Test.TechveritoProduct.fieldValidation@4738a206]" started-at="2022-04-29T08:26:16 IST" name="skuLenghtValidation" finished-at="2022-04-29T08:26:18 IST" duration-ms="1670" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skuLenghtValidation -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:Test.TechveritoProduct.fieldValidation@4738a206]" started-at="2022-04-29T08:26:18 IST" name="endTest" finished-at="2022-04-29T08:26:18 IST" duration-ms="154" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTest -->
-      </class> <!-- Test.TechveritoProduct.fieldValidation -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>

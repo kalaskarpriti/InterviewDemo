@@ -6,11 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -47,7 +43,7 @@ public class fieldValidation extends base {
 		productAction.createProduct().click();
 		String validationMessage = productAction.ErrorText();
 		assertEquals(validationMessage, data.get(3));
-        productAction.cancelButton().click();
+		productAction.cancelButton().click();
 
 	}
 
@@ -122,7 +118,9 @@ public class fieldValidation extends base {
 		productAction.enterSku().sendKeys(data.get(2));
 		productAction.enterDescription().sendKeys(data.get(3));
 		productAction.createProduct().click();
-		productAction.cancelButton().click();
+		driver.navigate().back();
+		driver.navigate().back();
+		
 
 	}
 
@@ -135,7 +133,9 @@ public class fieldValidation extends base {
 		productAction.enterSku().sendKeys(data.get(2));
 		productAction.enterDescription().sendKeys(data.get(3));
 		productAction.createProduct().click();
-		productAction.cancelButton().click();
+		driver.navigate().back();
+		driver.navigate().back();
+		
 	}
 
 	@AfterTest
