@@ -1,6 +1,7 @@
 package stringDemo;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 public class ReverseDemo {
@@ -10,6 +11,15 @@ public class ReverseDemo {
 		StringBuffer sb = new StringBuffer("Priti kalaskar");
 		System.out.println(sb.reverse());
 
+		// Without reverse function
+		String val = "Hi this is Priti";
+		String newstr = "";
+		for (int i = 0; i < val.length(); i++) {
+			newstr = val.charAt(i) + newstr;
+		}
+		System.out.println(newstr);
+
+		// Using List
 		String name = "My name is priti";
 		ArrayList<Character> nameList = new ArrayList<Character>();
 		for (char c : name.toCharArray()) {
@@ -17,8 +27,8 @@ public class ReverseDemo {
 		}
 
 		Collections.reverse(nameList);
-		System.out.println(nameList.toString().replaceAll("[,\\[\\]]", "").replaceAll("  ", "@").replaceAll(" ", "").replaceAll("@"," "));
-	
+		System.out.println(nameList.toString().replaceAll("[,\\[\\]]", "").replaceAll("  ", "@").replaceAll(" ", "")
+				.replaceAll("@", " "));
 
 	}
 
