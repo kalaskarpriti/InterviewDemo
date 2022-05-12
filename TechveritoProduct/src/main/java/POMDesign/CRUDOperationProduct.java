@@ -40,6 +40,9 @@ public class CRUDOperationProduct {
 
 	@FindBy(xpath = "//a[text()='Delete Product']")
 	private WebElement delete;
+	
+	@FindBy(xpath="//table[@id='index_table_products']/tbody/tr[3]/td[8]/div/a[2]")
+	private WebElement editThirdProd;
 
 	// Find WebElement for error messages
 

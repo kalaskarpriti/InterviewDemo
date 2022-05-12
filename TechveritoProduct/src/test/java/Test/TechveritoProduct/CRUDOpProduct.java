@@ -3,10 +3,9 @@ package Test.TechveritoProduct;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -28,9 +27,10 @@ public class CRUDOpProduct extends base {
 		productAction = new CRUDOperationProduct(driver);
 		productAction.productTab();
 		file = new excelutility();
+		//driver.findElements(By.className("edit_link")).get(2).click();
 	}
 
-	@Test(priority=1)
+	@Test(priority = 1)
 	public void addProduct() throws IOException {
 		data = file.getData("CreateProduct", "Product");
 		productAction.newProduct().click();
@@ -38,10 +38,11 @@ public class CRUDOpProduct extends base {
 		productAction.enterSku().sendKeys(data.get(2));
 		productAction.enterDescription().sendKeys(data.get(3));
 		productAction.createProduct().click();
+		
 
 	}
-	
-	@Test(priority=2)
+
+	@Test(priority = 2)
 	public void editProduct() throws IOException {
 		data = file.getData("EditProduct", "Product");
 		productAction.clickeditProduct().click();
@@ -54,16 +55,16 @@ public class CRUDOpProduct extends base {
 		productAction.updateProduct().click();
 
 	}
-	
-	@Test(priority=3)
+
+	@Test(priority = 3)
 	public void delProduct() throws InterruptedException {
-		
+
 		productAction.deleteProd().click();
 		driver.switchTo().alert().accept();
 		Thread.sleep(1000);
 
 	}
-	
+
 	@AfterTest
 	public void endTest() {
 		driver.close();
