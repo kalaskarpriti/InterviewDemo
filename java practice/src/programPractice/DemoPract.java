@@ -1,36 +1,60 @@
 package programPractice;
 
 import java.util.Arrays;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.Scanner;
+import java.util.Set;
 
 public class DemoPract {
 
 	public static void main(String[] args) {
+		// programe to print repeated string in nitin
 
-		String[] arr = { "AACCC6016B", "AACCC6016B", "AACCC6016b" };
-		String[] arr1 = { "29AACCC6016B1Z4", "29AACCC6017B1Z4", "29AACCC6016B1Z4" };
-		String[] arr2 = new String[arr1.length];
+		// Scanner sc = new Scanner(System.in);
+		// System.out.println("Print number here");
+		// Integer num = Integer.valueOf(sc.nextLine());
 
-		for (int i = 0; i < arr1.length; i++) {
-			arr2[i] = arr1[i].substring(2, 12);
-			if (arr2[i].equalsIgnoreCase(arr[i])) {
-				System.out.println("true");
-			} else
-				System.out.println("false");
-		}
-		System.out.println(Arrays.toString(arr2));
+		int num = 5;
 
-		String[] str = { "aabb", "aabc", "aabbdaaa", "aaabbbeeecccdd", "abcds" };
-		for (int i = 0; i < str.length; i++) {
-			char[] mychar = str[i].toCharArray();
-			int count = 0;
-			for (int j = 0; j < mychar.length; j++) {
-				int k = j + 1;
-				if (k < mychar.length && mychar[j] == mychar[k]) {
-					count++;
-					mychar[j + 1] = 0;
-				}
+		for (int i = 1; i < num; i++) {
+			int cp = 0;
+			for (int j = 1; j <= i; j++) {
+				cp++;
+				System.out.print(cp + " ");
 			}
-			System.out.println(count);
+
+			for (int j = i; j < num; j++) {
+				System.out.print("  ");
+			}
+			for (int j = i; j < num; j++) {
+				System.out.print("  ");
+			}
+			for (int j = 1; j <= i; j++) {
+				System.out.print(cp-- + " ");
+			}
+
+			System.out.println();
+		}
+
+		for (int i = 1; i <= num; i++) {
+			int cp = 0;
+			for (int j = i; j <= num; j++) {
+				cp++;
+				System.out.print(cp + " ");
+			}
+
+			for (int j = 1; j < i; j++) {
+				System.out.print("  ");
+			}
+			for (int j = 1; j < i; j++) {
+				System.out.print("  ");
+			}
+			for (int j = i; j <= num; j++) {
+				System.out.print(cp-- + " ");
+			}
+
+			System.out.println();
 		}
 
 	}

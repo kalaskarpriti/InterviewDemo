@@ -9,11 +9,13 @@ public class ImplementationClass implements InterfacDemo1 {
 		c1.demo2();
 		c1.demo3();
 		System.out.println(c1.demo4());
+		System.out.println(i);
 
 	}
 
 	@Override
 	public void demo1() {
+		System.out.println(i);
 		System.out.println("Running method demo1");
 
 	}
