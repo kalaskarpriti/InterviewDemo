@@ -22,4 +22,8 @@ public  class Demo1 {
 	public void m1() {
 		System.out.println("Overloading test in demo1");
 	}
+	
+	public void priti() {
+		System.out.println("priti");
+	}
 }

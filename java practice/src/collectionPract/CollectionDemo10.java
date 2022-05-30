@@ -14,7 +14,9 @@ public class CollectionDemo10 {
 		l.add(60);
 		l.add(50);
 
+
 		Collections.sort(l);
+		Collections.reverseOrder();
 		System.out.println(l);
 		System.out.println(Collections.binarySearch(l, 5));
 		Collections.sort(l, new MyCom());

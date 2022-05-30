@@ -9,7 +9,7 @@ import java.util.Set;
 public class Demo10 {
 
 	public static void main(String[] args) {
-		int[] arr= {2,2,4,4,7,-1,5};
+		int[] arr= {2,2,4,4,7,-1,5,1};
 		Set mySet=new LinkedHashSet();
 		for(int i=0; i<arr.length;i++) {
 			mySet.add(arr[i]);
